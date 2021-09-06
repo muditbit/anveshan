@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE INDIA</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'web/style.css' %}">
+
+
+
+<style>
+    body{
+        background-image: url("{% static 'web/2.jpg' %}");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+         
+    }
+</style>
+</head>
+<body>
+
+  {% load static %}
+    <header>
+
+        <div class="main">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/register">Login</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>EXPLORE INDIA</h1>
+        </div>
+        <div class="button">
+            <a href="/index" class="btn">CHECK OUT PLACES</a>
+            <a href="/about" class="btn">LEARN MORE</a>
+        </div>
+    </header>
+</body>
+</html>

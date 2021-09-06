@@ -1,0 +1,23 @@
+{% extends 'web/basic.html' %}
+{% block title %} Testing page 1 {% endblock %}
+{% block body %}
+{% load static %}
+<div class="row">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'web/3.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Winter Season</h5>
+    <p class="card-text">Places to visit in winter season. </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'web/3.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Winter Season</h5>
+    <p class="card-text">Places to visit in winter season. </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+{% endblock %}
